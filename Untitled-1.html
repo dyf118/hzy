@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>浙传校园临时通行码</title>
+<style>
+	#bg{
+		
+		width:800px; height:1100px;
+		background: url("141b292f83c2dac2b36c9b91e8a69a6.jpg")
+	;
+	background-size:800px 1300px;  }
+	#t1{
+		position: absolute;
+		left: 210px;
+		top: 745px;
+		font-size: 30px;
+	}
+	#t2{
+		position: absolute;
+		left: 290px;
+		top: 180px;
+		height: 100px;
+		font-size: 70px;
+		}
+	
+	</style>
+	<script>
+/* 时间 */
+function time() {
+  t_div = document.getElementById('t1');
+  var now = new Date()
+  t_div.innerHTML = now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate() + "  " + now.getHours() + ":" + now.getMinutes() + "-" +now.getFullYear() + "-" + (now.getMonth() + 1) + "-" + now.getDate() + "  " + (now.getHours()+1) + ":" + now.getMinutes();
+  setTimeout(time, 1000);
+}
+function time1() {
+  t_div = document.getElementById('t2');
+  var now = new Date()
+  t_div.innerHTML =(now.getMonth() + 1) + "月" + now.getDate() + "日" +  "<br/>" + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds() + "";
+t_div.style.fontSize = '34';
+  setTimeout(time, 1000);
+
+ 
+}
+
+</script>
+
+
+
+	</head>
+	<body onload="time1()">
+		<h1 id="t2"></h1>
+		</body>
+
+<body>	
+		
+	
+	
+		
+	
+		<body onload="time()">
+		<h3 id="t1"></h3>
+		</body>
+	
+	 
+	<div id="bg"></div>
+	
+	
+
+</body>
+</html>
